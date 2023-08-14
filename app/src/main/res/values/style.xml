@@ -13,4 +13,8 @@
         <item name="android:fontFamily">@raw/montserrat_medium</item>
     </style>
 
+    <style name="montserrat_medium_italic">
+        <item name="android:fontFamily">@raw/montserrat_medium_italic</item>
+    </style>
+
 </resources>

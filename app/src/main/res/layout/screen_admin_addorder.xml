@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/box_"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_1_add"
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginVertical="13dp"
+            android:text="Buyurtmani ochish"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_magazine_name"
+            style="@style/montserrat_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:text="Asia do'koni"
+            android:textColor="#959595"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/text_1_add"
+            app:layout_constraintTop_toBottomOf="@id/text_1_add" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_margin="14dp"
+            android:src="@drawable/component_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_2_add"
+        style="@style/montserrat_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:text="Yangi buyurtma qo'shish"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/box_"
+        app:layout_constraintTop_toBottomOf="@id/box_" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/box_"
+        app:layout_constraintStart_toStartOf="@id/box_"
+        app:layout_constraintTop_toBottomOf="@id/text_2_add">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:text="Nomi"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/water_name_edittext"
+            style="@style/montserrat_medium"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/bg_edit_text_login"
+            android:paddingStart="12dp"
+            android:text="Suv montella 10l"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:text="Haydovchi"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black">
+
+            <AutoCompleteTextView
+                style="@style/montserrat_medium"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/bg_edit_text_login"
+                android:inputType="none"
+                android:paddingStart="12dp"
+                android:text="Davron" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:text="Ombor"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Davron"
+            android:textColorHint="@color/black">
+
+            <AutoCompleteTextView
+                style="@style/montserrat_medium"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/bg_edit_text_login"
+                android:inputType="none"
+                android:paddingStart="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="12dp"
+            android:text="Orienter"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/orientation_name_edittext"
+            style="@style/montserrat_medium"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/bg_edit_text_login"
+            android:paddingStart="12dp"
+            android:text="Orientir yozing"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_add_back"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_back"
+        android:elevation="8dp"
+        android:outlineAmbientShadowColor="#0DCEDA"
+        android:outlineSpotShadowColor="#0DCEDA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/box_">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ortga"
+            android:textColor="#585858"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_add_save"
+        android:layout_width="152dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_next"
+        android:clickable="true"
+        android:elevation="8dp"
+        android:outlineAmbientShadowColor="#0DCEDA"
+        android:outlineSpotShadowColor="#0DCEDA"
+        android:focusable="true"
+        android:foreground="?selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/box_">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qo'shish"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

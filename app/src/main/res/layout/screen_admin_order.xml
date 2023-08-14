@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/box_2"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_1_active"
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginVertical="13dp"
+            android:text="Buyurtma"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/_order_id"
+        android:layout_width="141dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/box_2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID:5442"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_marginHorizontal="21dp"
+        android:layout_marginTop="32dp"
+        android:outlineAmbientShadowColor="#0DCEDA"
+        android:outlineSpotShadowColor="#0DCEDA"
+        android:paddingVertical="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/_order_id"
+        tools:targetApi="p">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/montserrat_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:text="Ismi:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/montserrat_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:text="Jasur"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/montserrat_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:text="Tel:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/montserrat_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:text="+998-90-677-09-12"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/montserrat_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:text="Adres:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/montserrat_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:text="Yakkasaroy 71 k."
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/montserrat_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:text="Orientr:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/montserrat_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
+                    android:text="Navo magazini"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/trash_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            android:src="@drawable/trash_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/edit_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:padding="4dp"
+                android:src="@drawable/edit" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_name"
+        style="@style/montserrat_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:text="Nomi"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/box_2"
+        app:layout_constraintTop_toBottomOf="@id/card_view" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/water_name_"
+        style="@style/montserrat_medium"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginVertical="12dp"
+        android:background="@drawable/bg_edit_text_login"
+        android:paddingStart="12dp"
+        android:text="Suv montella 10l"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/box_2"
+        app:layout_constraintStart_toStartOf="@+id/box_2"
+        app:layout_constraintTop_toBottomOf="@id/text_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/warehouse_text"
+        style="@style/montserrat_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ombor"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/text_name"
+        app:layout_constraintTop_toBottomOf="@id/water_name_" />
+</androidx.constraintlayout.widget.ConstraintLayout>
